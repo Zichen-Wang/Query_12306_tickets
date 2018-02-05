@@ -144,6 +144,7 @@ def main():
 
 	train_list = train_dict['data']['result']
 	for train in train_list:
+		time.sleep(3)
 		train_info_list = train.strip().split('|')
 		if sys.argv[5] == '1' and train_info_list[3][0] not in 'GCD':
 			continue
@@ -247,7 +248,6 @@ def main():
 					candidate_train_list[ind]['S_sw'] = train_info_list[32]
 					candidate_train_list[ind]['S_wr'] = train_info_list[33]
 
-		time.sleep(5)
 
 	fout = open('res.txt', 'w')
 	if sys.argv[5] == '1':
