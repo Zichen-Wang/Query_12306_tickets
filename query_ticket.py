@@ -208,6 +208,8 @@ def main():
 		s = se_station.strip().split('_')[0]
 		e = se_station.strip().split('_')[1]
 
+		print(no_station[s] + "_" + no_station[e])
+
 		pay_load = {
 			'leftTicketDTO.train_date': given_date,
 			'leftTicketDTO.from_station': s,
@@ -215,7 +217,7 @@ def main():
 			'purpose_codes': ticket_type
 		}
 
-		time.sleep(3)
+		time.sleep(1.5)
 		train_dict = send_requests(pay_load)
 
 		if train_dict == -1:
