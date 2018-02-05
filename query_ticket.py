@@ -217,7 +217,7 @@ def main():
 			'purpose_codes': ticket_type
 		}
 
-		time.sleep(1.5)
+		time.sleep(2)
 		train_dict = send_requests(pay_load)
 
 		if train_dict == -1:
