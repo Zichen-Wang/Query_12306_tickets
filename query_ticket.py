@@ -69,11 +69,10 @@ def send_requests(pay_load):
 		try:
 			r = requests.get(QueryURL, params=pay_load, headers=headers, timeout=5)
 			train_dict = r.json()
-		except Exception as ins:
+		except:
 			cnt += 1
 			print('Connection Error. Trying again...')
 			print(r.url)
-			print(ins)
 
 			time.sleep(5)
 			if cnt > 10:
