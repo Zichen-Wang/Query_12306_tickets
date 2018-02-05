@@ -67,7 +67,7 @@ def send_requests(pay_load):
 	cnt = 0
 	while True:
 		try:
-			r = requests.get(QueryURL, params=pay_load, headers=headers)
+			r = requests.get(QueryURL, params=pay_load, headers=headers, timeout=5)
 			train_dict = r.json()
 		except Exception as ins:
 			cnt += 1
@@ -144,7 +144,6 @@ def main():
 
 	train_list = train_dict['data']['result']
 	for train in train_list:
-		time.sleep(3)
 		train_info_list = train.strip().split('|')
 		if sys.argv[5] == '1' and train_info_list[3][0] not in 'GCD':
 			continue
@@ -216,6 +215,7 @@ def main():
 			'purpose_codes': ticket_type
 		}
 
+		time.sleep(3)
 		train_dict = send_requests(pay_load)
 
 		if train_dict == -1:
