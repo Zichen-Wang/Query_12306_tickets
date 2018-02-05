@@ -308,6 +308,7 @@ def main():
 				   	))
 		fout.write('\n\n')
 
+	fout.close()
 	print('Saved on res.txt')
 
 
