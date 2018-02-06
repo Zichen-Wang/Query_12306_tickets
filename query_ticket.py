@@ -49,7 +49,7 @@ def check_ticket_type(para_type):
 	if para_type == '0':
 		return 'ADULT'
 
-	return 0X00
+	return '0X00'
 
 def send_requests(pay_load):
 	#print(pay_load)
@@ -252,12 +252,18 @@ def main():
 
 	fout = open('res.txt', 'w')
 	if sys.argv[5] == '1':
-		t = '动车组列车'
+		t1 = '动车组列车'
 	elif sys.argv[5] == '2':
-		t = '普通列车'
+		t1 = '普通列车'
 	else:
-		t = '全部列车'
-	fout.write('%s从%s到%s%s的余票信息如下：\n' % (given_date, no_station[from_station], no_station[to_station],t))
+		t1 = '全部列车'
+
+	if ticket_type == 'ADULT':
+		t2 = '成人'
+	else:
+		t2 = '学生'
+	
+	fout.write('%s从%s到%s%s的%s票信息如下：\n' % (given_date, no_station[from_station], no_station[to_station], t1, t2))
 
 	for train in candidate_train_list:
 		if train['status'] == 'Y':
