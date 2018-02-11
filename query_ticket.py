@@ -72,7 +72,6 @@ def send_requests(pay_load):
 		except:
 			cnt += 1
 			print('Connection Error. Trying again...')
-			print(r.url)
 
 			time.sleep(5)
 			if cnt > 10:
