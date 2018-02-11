@@ -274,8 +274,8 @@ def main():
 		elif train['status'] == 'O':
 			train['status'] = '限售'
 
-		fout.write('车次\t状态\t始发站\t终到站\t出发\t到达\t时长\t硬座\t软座\t硬卧\t二等座\t一等座\t无座\t特等座\t商务座\t软卧\t动卧\t高级软卧\t一人软包\n')
-		fout.write('%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' % (
+		fout.write('车次\t状态\t始发站\t终到站\t出发\t到达\t时长\t硬座\t软座\t硬卧\t二等座\t一等座\t无座\t特等座\t商务座\t软卧\t动卧\t高级软卧 一人软包\n')
+		fout.write('%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t %s\n' % (
 			   	train['train_no'],
 			   	train['status'],
 			   	no_station[train['start']],
@@ -297,7 +297,7 @@ def main():
 			   	train['qt']
 			   	))
 		if train['is_se'] == False:
-			fout.write('\t\t\t\t\t始发终到余票信息\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' % (
+			fout.write('\t\t\t\t始发终到余票信息    \t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t %s\n' % (
 				   	train['S_yz'],
 				   	train['S_rz'],
 				   	train['S_yw'],
