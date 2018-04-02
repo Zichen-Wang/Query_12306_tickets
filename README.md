@@ -6,7 +6,7 @@
 
 ### 运行方式
 `python query_ticket.py 日期 出发站 到达站 票种（成人0、学生1） 列车等级（全部0、动车组1、普通车2）`
-Example:
+#### Example:
 `python query_ticket.py 2018-02-13 石家庄 北京 0 1`
 
 ### 备注
