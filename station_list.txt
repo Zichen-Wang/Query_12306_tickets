@@ -670,6 +670,7 @@
 察素齐 CSC
 长山屯 CVT
 长汀 CES
+朝天南 CTY
 昌图西 CPT
 春湾 CQQ
 磁县 CIP
@@ -969,8 +970,8 @@
 河间西 HXP
 花家庄 HJM
 河口南 HKJ
-黄口 KOH
 湖口 HKG
+黄口 KOH
 呼兰 HUB
 葫芦岛北 HPD
 浩良河 HHB
@@ -1217,8 +1218,8 @@
 冷水江东 UDQ
 连山关 LGT
 流水沟 USP
-陵水 LIQ
 丽水 USH
+陵水 LIQ
 罗山 LRN
 鲁山 LAF
 梁山 LMK
@@ -2169,8 +2170,8 @@
 长庆桥 CQJ
 长寿北 COW
 长寿湖 CSE
-潮汕 CBQ
 常山 CSU
+潮汕 CBQ
 长沙西 RXQ
 朝天 CTE
 长汀南 CNS
@@ -2203,6 +2204,7 @@
 大朗镇 KOQ
 大青沟 DSD
 德清 DRH
+东胜东 RSC
 砀山南 PRH
 大石头南 DAL
 当涂东 OWH
@@ -2478,8 +2480,8 @@
 盘山 PUD
 坪上 PSK
 萍乡北 PBG
-濮阳 PYF
 鄱阳 PYG
+濮阳 PYF
 平遥古城 PDV
 平原东 PUK
 普者黑 PZM
@@ -2601,6 +2603,7 @@
 乌鲁木齐 WAR
 五女山 WET
 武胜 WSE
+五通 WTZ
 无为 IIH
 瓦屋山 WAH
 闻喜西 WOV
@@ -2675,8 +2678,8 @@
 阳朔 YCZ
 云山 KZQ
 玉山南 YGG
-银滩 CTQ
 永泰 YTS
+银滩 CTQ
 鹰潭北 YKG
 烟台南 YLK
 伊通 YTL
